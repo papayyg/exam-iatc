@@ -37,6 +37,7 @@ a {
 
 header {
     height: 100vh;
+    min-height: 900px;
     padding: 40px 0 60px;
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/main_bg-1.jpg") no-repeat center / cover;
     position: relative;
@@ -355,5 +356,62 @@ header {
         margin-top: 20px;
         font-size: 14px;
         line-height: 200%;
+    }
+}
+
+.reviews {
+    position: relative;
+    min-height: 654px;
+    padding-bottom: 248px;
+    &__title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 200%;
+        margin-bottom: 110px;
+    }
+    &__caption {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 200%;
+        margin-bottom: 10px;
+    }
+    &__descr {
+        font-size: 18px;
+        line-height: 200%;
+        min-height: 144px;
+        margin-bottom: 20px;
+    }
+    &__client {
+        display: flex;
+        gap: 10px;
+    }
+    &__photo {
+        width: 60px;
+        height: 60px;
+        img {
+            border-radius: 50%;
+        }
+    }
+    &__info {
+        &-name {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 200%;
+        }
+        &-prof {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 200%;
+        }
+    }
+    &__block {
+        min-height: 260px;
+    }
+    .swiper-wrapper {
+        position: static;
+    }
+    .reviewsSwiper {
+        position: static;
     }
 }

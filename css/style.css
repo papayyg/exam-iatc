@@ -28,6 +28,7 @@ a {
 
 header {
   height: 100vh;
+  min-height: 900px;
   padding: 40px 0 60px;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/main_bg-1.jpg") no-repeat center/cover;
   position: relative;
@@ -358,4 +359,59 @@ header .main__input::after {
   margin-top: 20px;
   font-size: 14px;
   line-height: 200%;
+}
+
+.reviews {
+  position: relative;
+  min-height: 654px;
+  padding-bottom: 248px;
+}
+.reviews__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 200%;
+  margin-bottom: 110px;
+}
+.reviews__caption {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 200%;
+  margin-bottom: 10px;
+}
+.reviews__descr {
+  font-size: 18px;
+  line-height: 200%;
+  min-height: 144px;
+  margin-bottom: 20px;
+}
+.reviews__client {
+  display: flex;
+  gap: 10px;
+}
+.reviews__photo {
+  width: 60px;
+  height: 60px;
+}
+.reviews__photo img {
+  border-radius: 50%;
+}
+.reviews__info-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 200%;
+}
+.reviews__info-prof {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 200%;
+}
+.reviews__block {
+  min-height: 260px;
+}
+.reviews .swiper-wrapper {
+  position: static;
+}
+.reviews .reviewsSwiper {
+  position: static;
 }/*# sourceMappingURL=style.css.map */
