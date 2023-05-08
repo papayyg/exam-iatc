@@ -271,7 +271,7 @@ header {
     &__wrapper {
         padding-top: 20px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
         gap: 20px;
     }
     &__item {
@@ -315,7 +315,7 @@ header {
     min-height: 611px;
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         gap: 33px;
     }
     &__block {
@@ -412,7 +412,7 @@ header {
     &__wrapper {
         padding-top: 40px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
         gap: 20px;
     }
     &__item {
@@ -511,7 +511,7 @@ header {
     padding: 200px 0;
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         gap: 80px;
     }
     &__img {
@@ -835,7 +835,8 @@ header {
             }
         }
         &__item {
-            &::before, &::after {
+            &::before,
+            &::after {
                 width: 10px;
                 height: 1px;
             }
@@ -843,6 +844,145 @@ header {
         &__link {
             margin-top: 20px;
             font-size: 12px;
+        }
+    }
+    .product {
+        padding-bottom: 140px;
+        &__title {
+            font-size: 18px;
+        }
+        &__wrapper {
+            padding-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+            gap: 10px;
+        }
+        &__img {
+            padding: 19px 33px;
+            width: 163px;
+            height: 154px;
+            margin: 0 auto;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__text {
+            padding: 10px 0 0 17px;
+        }
+        &__name {
+            font-size: 14px;
+        }
+        &__rating {
+            width: 76px;
+            height: 12px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__category,
+        &__idr {
+            font-size: 12px;
+        }
+    }
+    .reviews {
+        min-height: unset;
+        padding-bottom: 48px;
+        &__title {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        &__caption {
+            font-size: 14px;
+        }
+        &__descr {
+            font-size: 12px;
+            min-height: unset;
+            margin-bottom: 14px;
+        }
+        &__block {
+            min-height: unset;
+            margin-bottom: 40px;
+        }
+        &__photo {
+            width: 40px;
+            height: 40px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__client {
+            align-items: center;
+        }
+        &__item {
+            align-items: center;
+        }
+        &__info {
+            &-name,
+            &-prof {
+                font-size: 14px;
+            }
+        }
+    }
+    .make {
+        padding: 100px 0;
+        &__wrapper {
+            gap: 40px;
+        }
+        &__title {
+            font-size: 14px;
+        }
+        &__descr {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        &__input {
+            input {
+                font-size: 10px;
+                padding: 9px 10px;
+            }
+        }
+        &__btn {
+            top: 5px;
+            width: 28px;
+            height: 28px;
+        }
+    }
+    .footer {
+        padding: 20px 0 28px;
+        &__logo {
+            width: 124px;
+            height: 36px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 40px;
+        }
+        &__item {
+            ul {
+                li {
+                    margin-bottom: 20px;
+                    a {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                    &:nth-child(1) {
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+        &__descr {
+            margin-top: 100px;
+            font-size: 12px;
+            line-height: 18px;
         }
     }
 }
