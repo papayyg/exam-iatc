@@ -301,7 +301,6 @@ header .main__btn:hover {
 .ideas {
   padding-bottom: 200px;
   min-height: 611px;
-  background: linear-gradient(279.85deg, #ffffff 0%, #faf5f2 100%);
 }
 .ideas__wrapper {
   display: grid;
@@ -442,6 +441,7 @@ header .main__btn:hover {
   position: relative;
   min-height: 654px;
   padding-bottom: 248px;
+  background: linear-gradient(279.85deg, #FFFFFF 0%, #FAF5F2 100%);
 }
 .reviews__title {
   text-align: center;
