@@ -62,10 +62,12 @@ navbarCloseButton.addEventListener("click", function () {
     asideMenu.classList.toggle("active");
 });
 
-const navbarButton = document.querySelector(".navbar__button");
+const navbarButtons = document.querySelectorAll(".navbar__button");
 
-navbarButton.addEventListener("click", function () {
-    asideMenu.classList.toggle("active");
+navbarButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        asideMenu.classList.toggle("active");
+    });
 });
 
 const dropMenuButton = document.querySelector("#submenu");
