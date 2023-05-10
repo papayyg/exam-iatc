@@ -278,14 +278,16 @@ header {
         width: 100%;
         padding: 16px 20px 20px;
         background: rgba(255, 255, 255, 0.2);
-        border: 1px solid #fadcd9;
-        box-shadow: 4px 2px 10px 2px rgba(247, 148, 137, 0.2);
+        // outline: 1px solid #fadcd9;
+        box-shadow: inset 0 0 0 0px #fadcd9;
+        transition: all 0.3s;
         border-radius: 10px;
-        transition: all 0.3s ease-in-out;
         &:hover {
-            transform: scale(1.05);
-            background-color: #fadcd9;
-            color: #333;
+            
+            // transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0 0 0 2px #fadcd9, 4px 2px 10px 2px rgba(247, 148, 137, 0.2);
+            
         }
     }
     &__icon {
@@ -313,6 +315,7 @@ header {
 .ideas {
     padding-bottom: 200px;
     min-height: 611px;
+    background: linear-gradient(279.85deg, #ffffff 0%, #faf5f2 100%);
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -320,6 +323,7 @@ header {
     }
     &__block {
         height: 562px;
+        overflow-x: hidden;
         overflow-y: scroll;
         padding-right: 50px;
         &::-webkit-scrollbar {
@@ -587,7 +591,7 @@ header {
     &__wrapper {
         @include flex-block;
         align-items: unset;
-        gap: 239px;
+        // gap: 239px;
     }
     &__logo {
         width: 238px;

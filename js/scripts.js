@@ -19,27 +19,31 @@ const swiperHeader = new Swiper(".headerSwiper", {
     },
 });
 
-const swiperReviews = new Swiper(".reviewsSwiper", {
-    spaceBetween: 30,
-    speed: 1000,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    slidesPerView: 1,
-    breakpoints: {
-        1200: {
-            slidesPerView: 3,
+try {
+    const swiperReviews = new Swiper(".reviewsSwiper", {
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
         },
-        576: {
-            slidesPerView: 2,
-        }
-    },
-});
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        slidesPerView: 1,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+        },
+    });
+} catch (error) {
+    console.log("слайдер не запущен");
+}
 
 const blocks = document.querySelectorAll(".ideas__item");
 
@@ -49,8 +53,6 @@ blocks.forEach(function (block) {
         content.classList.toggle("show");
     });
 });
-
-
 
 const asideMenu = document.querySelector("aside");
 
@@ -72,3 +74,5 @@ const subMenu = document.querySelector(".submenu");
 dropMenuButton.addEventListener("click", function () {
     subMenu.classList.toggle("active");
 });
+
+new WOW().init();
