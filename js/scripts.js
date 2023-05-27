@@ -14,7 +14,7 @@ const swiperHeader = new Swiper(".headerSwiper", {
         disableOnInteraction: false,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination1",
         clickable: true,
     },
 });
